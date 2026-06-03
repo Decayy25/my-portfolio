@@ -1,7 +1,9 @@
 import { Fragment } from "react";
 import { Inter } from "next/font/google";
-import PageHead from "@/components/commons/PageHead";
-import Hero from "@/components/organisms/Hero"
+import Header from "@/components/templates/Header";
+import PageHead from "@/components/commons/PageHead/PageHead";
+import Hero from "@/components/templates/Hero"
+import About from "@/components/templates/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,10 +11,12 @@ export default function Home() {
   return (
     <Fragment>
       <PageHead title="Moch. Rizqi Hermawan | Web Developer" />
+      <Header />
       <main
         className={inter.className}
       >
         <Hero />
+        <About />
       </main>
     </Fragment>
   );

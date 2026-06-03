@@ -1,0 +1,38 @@
+import { Fragment } from "react";
+import { IHyperlink } from "@/@types/UI";
+
+const Hyperlink = (props: IHyperlink) => {
+  const {
+    title,
+    href,
+    className,
+    target,
+    rel,
+    style,
+    onMouseEnter,
+    onMouseLeave,
+    onClick,
+    children,
+  } = props;
+
+  return (
+    <Fragment>
+      <div>
+        <a
+          href={href}
+          className={className}
+          target={target}
+          rel={rel}
+          style={style}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+          onClick={onClick}
+        >
+          {children || title}
+        </a>
+      </div>
+    </Fragment>
+  );
+};
+
+export default Hyperlink;

@@ -15,6 +15,7 @@
 @theme {
   --color-primary: oklch(62.3% 0.214 259.815);
   --color-dark: oklch(20.8% 0.042 265.755);
+  --color-secondary: oklch(55.4% 0.046 257.417);
 
   --breakpoint-2xl: 1320px;
 }
@@ -34,5 +35,18 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-blur {
+  @apply fixed z-[9999] bg-white/80;
+  backdrop-filter: blur(5px);
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-dark;
+}
+
+.hamburger-active {
+
 }
