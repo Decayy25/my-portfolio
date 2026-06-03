@@ -5,7 +5,7 @@ import HeroImage from "../molecules/HeroImage";
 const Hero = () => {
   return (
     <Fragment>
-      <section id="home" className="pt-20">
+      <section id="home" className="pt-15">
         <div className="container">
           <div className="flex flex-wrap">
             <HeroBio />
