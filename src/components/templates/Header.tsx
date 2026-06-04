@@ -12,7 +12,7 @@ const Header = () => {
     { label: "Beranda", href: "#" },
     { label: "Tentang Saya", href: "#about" },
     { label: "Portfolio", href: "#portfolio" },
-    { label: "Clients", href: "#client" },
+    { label: "Clients", href: "#clients" },
     { label: "Blog", href: "#blog" },
     { label: "Contact", href: "#contact" },
   ];

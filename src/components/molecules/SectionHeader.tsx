@@ -14,13 +14,13 @@ const SectionHeader = ({ label, title, description }: SectionHeaderProps) => {
         <Heading level="h4" className="font-semibold text-lg text-primary mb-2">
           {label}
         </Heading>
-        <Heading level="h2" className="font-bold text-dark text-3xl mb-4">
+        <Heading
+          level="h2"
+          className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl md:text-lg"
+        >
           {title}
         </Heading>
-        <Text
-          variant="secondary"
-          className="font-medium text-md sm:text-4xl lg:text-5xl md:text-lg"
-        >
+        <Text variant="secondary" className="font-medium text-md ">
           {description}
         </Text>
       </div>
