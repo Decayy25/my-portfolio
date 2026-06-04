@@ -1,5 +1,6 @@
 import { ReactNode, ComponentType, CSSProperties } from "react";
 import { IconType } from "react-icons";
+import { StaticImageData } from "next/image";
 
 export interface ISocialMediaItem {
   id: string;
@@ -55,4 +56,12 @@ export interface IButton {
   type?: "button" | "reset" | "submit";
   name?: string;
   onClick?: () => void;
+}
+
+export interface IProject {
+  id: number;
+  title: string;
+  name: string;
+  img: StaticImageData;
+  description: string;
 }

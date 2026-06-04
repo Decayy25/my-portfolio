@@ -4,6 +4,8 @@ import Header from "@/components/templates/Header";
 import PageHead from "@/components/commons/PageHead/PageHead";
 import Hero from "@/components/templates/Hero"
 import About from "@/components/templates/About";
+import Portfolio from "@/components/templates/Portfolio";
+import Clients from "@/components/templates/clients";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,8 @@ export default function Home() {
       >
         <Hero />
         <About />
+        <Portfolio />
+        <Clients />
       </main>
     </Fragment>
   );

@@ -1,5 +1,7 @@
-import Heading from "../atoms/Heading";
-import Hyperlink from "../atoms/Hyperlink"; // Pastikan komponen ini sudah mendukung .tsx atau buat file deklarasi .d.ts jika masih .js
+import Heading from "@/components/atoms/Heading";
+import Subtitle from "@/components/atoms/Subtitle";
+import Description from "@/components/atoms/Description";
+import Hyperlink from "@/components/atoms/Hyperlink";
 
 const HeroBio = () => {
   return (
@@ -14,20 +16,17 @@ const HeroBio = () => {
         </span>
       </Heading>
 
-      <Heading
-        level="h2"
-        className="font-medium text-secondary text-lg mb-5 lg:text-2xl"
-      >
+      <Subtitle>
         Student | <span className="text-dark">Web Developer</span>
-      </Heading>
+      </Subtitle>
 
-      <p className="font-medium text-secondary mb-10 leading-relaxed">
+      <Description>
         <span className="text-dark font-semibold">Asynchronous</span>{" "}
         mengajarkan bagaimana simulasi agar status bersama orang lain hasilnya{" "}
         <span className="text-dark font-semibold">fulfilled</span> bukan{" "}
         <span className="text-dark font-semibold">rejected</span> atau{" "}
         <span className="text-dark font-semibold">pending!</span>
-      </p>
+      </Description>
 
       <Hyperlink
         title="Hubungi Saya"
