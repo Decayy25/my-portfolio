@@ -6,6 +6,7 @@ import Hero from "@/components/templates/Hero"
 import About from "@/components/templates/About";
 import Portfolio from "@/components/templates/Portfolio";
 import Clients from "@/components/templates/clients";
+import Blog from "@/components/templates/Blog";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function Home() {
         <About />
         <Portfolio />
         <Clients />
+        <Blog />
       </main>
     </Fragment>
   );

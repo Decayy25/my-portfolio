@@ -13,6 +13,15 @@ export interface ISocialMediaItem {
   icon: IconType;
 }
 
+export interface IBlogItem {
+  id: number;
+  image: string;
+  h3: string;
+  href: string;
+  text: string;
+  imageUrl: string | null;
+}
+
 export interface IHyperlink {
   title?: string | ReactNode;
   className?: string;
