@@ -5,7 +5,7 @@ import BlogCard from "../molecules/BlogCard";
 const Blog = () => {
   return (
     <Fragment>
-      <section id="blog" className="pt-34 pb-32 bg-slate-100">
+      <section id="blogs" className="pt-34 pb-32 bg-slate-100">
         <div className="container">
           <SectionHeader
             label="Blog"

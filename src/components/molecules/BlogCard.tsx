@@ -3,15 +3,15 @@ import Heading from "@/components/atoms/Heading";
 import Image from "next/image";
 import Hyperlink from "@/components/atoms/Hyperlink";
 import Text from "@/components/atoms/Text";
-import { Blogs } from "../../data/Blogs";
-import { IBlogItem } from '../../@types/UI';
+import { Blogs } from "@/data/blogs";
+import { IBlogItem } from '@/@types/UI';
 
 
 const BlogCard = () => {
   const [blogs, setBlogs] = useState<IBlogItem[]>([]);
 
   useEffect(() => {
-    const loadBlogs = async () => {
+    (async () => {
       const result = await Promise.all(
         Blogs.map(async (blog) => {
           try {
@@ -35,9 +35,9 @@ const BlogCard = () => {
       );
 
       setBlogs(result);
-    };
+    }) ();
 
-    loadBlogs();
+
   }, []);
 
   return (

@@ -1,14 +1,11 @@
 import React from "react";
 import SocialMediaLink from "./SocialMediaLink";
 import { socialMediaData } from "./socialMediaData";
-import { ISocialMediaItem } from "@/@types/UI";
+import { ISocialMediaLinksProps } from "@/@types/UI";
 
-interface SocialMediaLinksProps {
-  items?: ISocialMediaItem[];
-  className?: string;
-}
 
-const SocialMediaLinks: React.FC<SocialMediaLinksProps> = ({
+
+const SocialMediaLinks: React.FC<ISocialMediaLinksProps> = ({
   items = socialMediaData,
   className = "flex items-center gap-2 mt-4",
 }) => {

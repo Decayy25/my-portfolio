@@ -19,7 +19,7 @@ export default async function handler(
     const imageUrl = await getBlogsImage(query);
     if (!imageUrl) {
       console.warn(`[API] Tidak ada image URL untuk query: "${query}"`);
-    } 
+    }
     return res.status(200).json({ imageUrl });
   } catch (error) {
     console.error("[API] Error:", error);

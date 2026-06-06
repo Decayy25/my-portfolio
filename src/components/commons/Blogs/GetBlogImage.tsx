@@ -3,9 +3,7 @@ import { ACCESS } from "@/utils/env";
 const getBlogsImage = async (query: string) => {
   try {
     if (!ACCESS) {
-      console.warn(
-        "ACCESS key tidak ditemukan atau belum diset di .env.local",
-      );
+      console.warn("ACCESS key tidak ditemukan atau belum diset di .env.local");
       return null;
     }
 
@@ -22,7 +20,6 @@ const getBlogsImage = async (query: string) => {
         },
       },
     );
-
 
     if (!res.ok) {
       const errorText = await res.text();

@@ -17,7 +17,6 @@ const Hyperlink = (props: IHyperlink) => {
 
   return (
     <Fragment>
-      <div>
         <a
           href={href}
           className={className}
@@ -30,7 +29,6 @@ const Hyperlink = (props: IHyperlink) => {
         >
           {children || title}
         </a>
-      </div>
     </Fragment>
   );
 };

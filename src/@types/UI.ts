@@ -13,6 +13,26 @@ export interface ISocialMediaItem {
   icon: IconType;
 }
 
+export interface IFooterLinkItem {
+  label: string;
+  href: string;
+}
+
+export interface IFooterSectionProps {
+  title: string;
+  items: IFooterLinkItem[];
+}
+
+export interface ISocialMediaLinksProps {
+  items?: ISocialMediaItem[];
+  className?: string;
+}
+
+export interface ILabel {
+  htmlFor: string;
+  title: string
+}
+
 export interface IBlogItem {
   id: number;
   image: string;
@@ -20,6 +40,14 @@ export interface IBlogItem {
   href: string;
   text: string;
   imageUrl: string | null;
+}
+
+export interface IForm {
+  label: string;
+  name: string;
+  type: string;
+  id: string;
+  placeholder?: string;
 }
 
 export interface IHyperlink {
@@ -59,7 +87,7 @@ export interface ISocialMediaLink {
 }
 
 export interface IButton {
-  children: ReactNode | string;
+  children?: ReactNode | string;
   className?: string;
   id?: string;
   type?: "button" | "reset" | "submit";

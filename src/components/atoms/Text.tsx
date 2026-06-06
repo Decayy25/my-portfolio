@@ -1,7 +1,7 @@
 interface TextProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
-  variant?: "primary" | "secondary" | "dark";
+  variant?: "primary" | "secondary" | "dark" | "white";
   size?: "sm" | "base" | "md" | "lg";
 }
 
@@ -15,6 +15,7 @@ const Text = ({
     primary: "text-primary",
     secondary: "text-secondary",
     dark: "text-dark",
+    white: "text-white",
   };
 
   const sizeClasses = {

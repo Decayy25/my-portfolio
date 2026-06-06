@@ -7,6 +7,8 @@ import About from "@/components/templates/About";
 import Portfolio from "@/components/templates/Portfolio";
 import Clients from "@/components/templates/clients";
 import Blog from "@/components/templates/Blog";
+import Contact from "@/components/templates/Contact";
+import Footer from "@/components/templates/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +25,9 @@ export default function Home() {
         <Portfolio />
         <Clients />
         <Blog />
+        <Contact />
       </main>
+      <Footer />
     </Fragment>
   );
 }
