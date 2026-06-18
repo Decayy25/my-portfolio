@@ -3,7 +3,7 @@ import Heading from "@/components/atoms/Heading";
 import Image from "next/image";
 import Hyperlink from "@/components/atoms/Hyperlink";
 import Text from "@/components/atoms/Text";
-import { Blogs } from "@/data/blogs";
+import { Blogs } from "../../data/blogs";
 import { IBlogItem } from '@/@types/Ui';
 
 
