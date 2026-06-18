@@ -3,7 +3,43 @@ import Hyperlink from "@/components/atoms/Hyperlink";
 import Heading from "@/components/atoms/Heading";
 import Image from "next/image";
 import Text from "@/components/atoms/Text";
-import { clients } from "@/data/clients";
+
+import Google from "@/assets/images/clients/Google.png";
+import CyberNet from "@/assets/images/clients/cybernet.png";
+import Tokopedia from "@/assets/images/clients/Tokopedia.png";
+import Traveloka from "@/assets/images/clients/Traveloka.png";
+
+export const clients = [
+  {
+    id: 1,
+    href: "#",
+    src: Google,
+    alt: "Google",
+    type: "svg",
+  },
+  {
+    id: 2,
+    href: "#",
+    src: CyberNet,
+    alt: "CyberNet",
+    type: "image",
+  },
+  {
+    id: 3,
+    href: "#",
+    src: Tokopedia,
+    alt: "Tokopedia",
+    type: "svg",
+  },
+  {
+    id: 4,
+    href: "#",
+    src: Traveloka,
+    alt: "Traveloka",
+    type: "svg",
+  },
+];
+
 
 const Clients = () => {
   return (
