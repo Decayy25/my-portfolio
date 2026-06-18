@@ -7,7 +7,7 @@ export const Blogs = [
     id: 1,
     image: "programming",
     h3: "Full Stack Developer",
-    href: "https://www.google.com/search?q=fullStack_developer",
+    href: "https://www.google.com/search?q=Full%20Stack%20developer",
     text: "Saya memiliki minat yang cukup untuk menjadi full stack developer, dari awal penasaran sekarang mau menjadikan sebuah perkerjaan",
   },
   {
