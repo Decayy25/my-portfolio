@@ -2,7 +2,7 @@
 // import img2 from "@/assets/images/blog/2.jpg";
 // import img3 from "@/assets/images/blog/3.jpg";
 
-export const Blogs = [
+const Blogs = [
   {
     id: 1,
     image: "programming",
@@ -25,3 +25,5 @@ export const Blogs = [
     text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse soluta ipsam perferendis?",
   },
 ];
+
+export default Blogs;
