@@ -1,10 +1,7 @@
 import React from "react";
 import Heading from "@/components/atoms/Heading";
 import Hyperlink from "@/components/atoms/Hyperlink";
-import { IFooterSectionProps} from "@/@types/UI";
-
-
-
+import { IFooterSectionProps} from "@/@types/Ui";
 
 
 const FooterSection: React.FC<IFooterSectionProps> = ({ title, items }) => {
@@ -19,6 +16,7 @@ const FooterSection: React.FC<IFooterSectionProps> = ({ title, items }) => {
             <Hyperlink
               href={item.href}
               className="inline-block text-base hover:text-primary mb-3"
+              target={item.target}
             >
               {item.label}
             </Hyperlink>

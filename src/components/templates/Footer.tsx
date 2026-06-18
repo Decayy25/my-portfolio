@@ -15,7 +15,6 @@ const Footer = () => {
         <div className="container">
           <div className="flex flex-wrap">
             <FooterBrand
-              name={brand.name}
               description={brand.description}
               contact={brand.contact}
             />

@@ -1,19 +1,66 @@
+import React, { useState } from "react";
 import Form from "next/form";
 import Label from "@/components/atoms/Label";
 import Button from "@/components/atoms/Button";
 import InputForm from "@/components/molecules/InputForm";
 
 const FormContact = () => {
-  return (
-    <Form action="/send-contact" className="w-full lg:w-2/3 lg:mx-auto">
-      <InputForm id="name" name="name" label="Nama" type="text" />
-      <InputForm id="contact" name="contact" label="Email" type="email" />
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-      <div className="w-full px-4 mb-8">
+  const handlerSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      });
+
+      const result = await res.json();
+      return result;
+    } catch {
+      throw new Error();
+    }
+  };
+
+  return (
+    <form onSubmit={handlerSubmit} className="w-full lg:w-2/3 lg:mx-auto">
+      <InputForm
+        id="name"
+        name="name"
+        label="Nama"
+        type="text"
+        value={name}
+        placeholder="Your Name"
+        onChange={(e) => setName(e.target.value)}
+      />
+      <InputForm
+        id="email"
+        name="email"
+        label="Email"
+        type="email"
+        value={email}
+        placeholder="example@gmail.com"
+        onChange={(e) => setEmail(e.target.value)}
+      />
+
+      <div className="w-full px-4 mb-8" data-aos="fade-up">
         <Label htmlFor="message" title="Pesan" />
         <textarea
-          id="name"
-          name="name"
+          id="message"
+          name="message"
+          value={message}
+          placeholder="Your message"
+          onChange={(e) => setMessage(e.target.value)}
           className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:right-1 focus:border-primary h-32"
         ></textarea>
       </div>
@@ -26,7 +73,7 @@ const FormContact = () => {
           Kirim
         </Button>
       </div>
-    </Form>
+    </form>
   );
 };
 

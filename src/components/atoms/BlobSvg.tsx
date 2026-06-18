@@ -1,4 +1,4 @@
-import { IBlobSvg } from "@/@types/UI";
+import { IBlobSvg } from "@/@types/Ui";
 
 const BlobSvg = (props: IBlobSvg) => {
   const { color = "#3B82F6" } = props;

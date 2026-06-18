@@ -4,7 +4,7 @@ import img from "../../assets/images/general/profile.png";
 
 const HeroImage = () => {
   return (
-    <div className="w-full self-end px-4 lg:w-1/2">
+    <div className="w-full self-end px-4 lg:w-1/2" data-aos="flip-left">
       <div className="relative mt-10 lg:mt-9 lg:ml-0 overflow-hidden">
         <Image src={img} alt="Profile" className="max-w-full mx-auto" />
         <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-linear-to-t from-white to-transparent pointer-events-none " />

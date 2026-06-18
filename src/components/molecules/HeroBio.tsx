@@ -5,7 +5,7 @@ import Hyperlink from "@/components/atoms/Hyperlink";
 
 const HeroBio = () => {
   return (
-    <div className="w-full self-center px-4 lg:w-1/2">
+    <div className="w-full self-center px-4 lg:w-1/2" data-aos="fade-right">
       <Heading
         level="h1"
         className="text-base font-semibold text-primary lg:text-xl"

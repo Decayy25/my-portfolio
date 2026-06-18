@@ -1,4 +1,4 @@
-import { IHeading } from "@/@types/UI"
+import { IHeading } from "@/@types/Ui"
 
 const Heading = (props: IHeading) => {
     const {children, level = "h1", className = ""} = props;

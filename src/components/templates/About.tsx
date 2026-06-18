@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { SocialMediaLinks } from "@/components/commons/SocialMedia";
-import Heading from "@/components/atoms/Heading"
+import Heading from "@/components/atoms/Heading";
 import Text from "@/components/atoms/Text";
 
 const About = () => {
@@ -8,12 +8,18 @@ const About = () => {
     <Fragment>
       <section id="about" className="pt-36 pb-32">
         <div className="container">
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap" data-aos="fade-up">
             <div className="w-full px-4 mb-10 lg:w-1/2">
-              <Heading level="h4" className="font-bold uppercase text-primary text-lg mb-3">
+              <Heading
+                level="h4"
+                className="font-bold uppercase text-primary text-lg mb-3"
+              >
                 Tentang saya
               </Heading>
-              <Heading level="h2" className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
+              <Heading
+                level="h2"
+                className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl"
+              >
                 Status boleh pending hari ini, tapi masa depan wajib fulfilled!
               </Heading>
               <Text className="font-medium text-base text-secondary lg:text-lg">
@@ -24,10 +30,16 @@ const About = () => {
               </Text>
             </div>
             <div className="w-full px-4 lg:w-1/2">
-              <h3 className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
+              <Heading
+                level="h3"
+                className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10"
+              >
+                Mari berteman
+              </Heading>
               <p className="font-medium text-base text-secondary mb-6 lg:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                temporibus libero soluta amet rerum quos quidem rem aliquid.
+                Beberapa akun yang tehubung, saya lebih aktif di facebook
+                daripada akun social media lain. Bahasa pengrogramman favorit
+                saya adalah JavaScript.
               </p>
               <div className="flex items-center">
                 <SocialMediaLinks />

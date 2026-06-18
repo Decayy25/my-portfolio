@@ -1,4 +1,4 @@
-import { ILabel } from "@/@types/UI";
+import { ILabel } from "@/@types/Ui";
 
 const Label = (props: ILabel) => {
   const { htmlFor, title } = props;

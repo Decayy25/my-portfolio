@@ -18,7 +18,7 @@ const ProjectCard = ({
   return (
     <div className="mb-12 p-4 md:w-1/2 w-full">
       <div className="rounded-md shadow-md overflow-hidden">
-        <Image src={image} alt={imageAlt} className="w-full" />
+        <Image src={image} alt={imageAlt} className="w-full" data-aos="fade-up"/>
       </div>
       <Heading level="h3" className="font-semibold text-dark text-xl mt-5 mb-3">
         {title}

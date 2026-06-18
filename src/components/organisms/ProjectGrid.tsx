@@ -1,4 +1,4 @@
-import { IProject } from "@/@types/UI"
+import { IProject } from "@/@types/Ui"
 import ProjectCard from "@/components/molecules/ProjectCard";
 
 

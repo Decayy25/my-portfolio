@@ -34,6 +34,7 @@ const Header = () => {
   return (
     <Fragment>
       <header
+        data-aos="fade-down"
         ref={headerRef}
         className={`fixed top-0 left-0 w-full flex items-center z-10 transition-all duration-300 ${
           isScrolled ? "nav-blur shadow" : "bg-transparent"

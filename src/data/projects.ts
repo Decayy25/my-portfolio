@@ -35,6 +35,6 @@ export const projects = [
     img: elearningSmart,
     name: "E-Learning",
     description:
-      "Platform E-Learning berbasis website dengan teknologi MongoDB ReactJS ElysiaJS BunJS dan performa yang cepat serta fitur yang lengkap",
+      "Platform E-Learning berbasis website dengan teknologi MongoDB dan NextJS dan performa yang cepat serta fitur yang lengkap",
   },
 ];

@@ -1,7 +1,7 @@
 import React from "react";
 import SocialMediaLink from "./SocialMediaLink";
 import { socialMediaData } from "./socialMediaData";
-import { ISocialMediaLinksProps } from "@/@types/UI";
+import { ISocialMediaLinksProps } from "@/@types/Ui";
 
 
 

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { IHyperlink } from "@/@types/UI";
+import { IHyperlink } from "@/@types/Ui";
 
 const Hyperlink = (props: IHyperlink) => {
   const {

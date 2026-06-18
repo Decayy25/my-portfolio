@@ -27,8 +27,7 @@ const Clients = () => {
               variant="secondary"
               className="font-medium text-md md:text-lg"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-              voluptatum omnis asperiores. Corrupti, repellendus. Velit
+              Perusahaan yang pernah berkerjasama dengan saya
             </Text>
           </div>
 

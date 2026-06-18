@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { IButton } from "@/@types/UI";
+import { IButton } from "@/@types/Ui";
 
 const Button = (props: IButton) => {
   const { children, className, id, type = "button", name, onClick } = props;

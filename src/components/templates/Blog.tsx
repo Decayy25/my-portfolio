@@ -9,12 +9,12 @@ const Blog = () => {
         <div className="container">
           <SectionHeader
             label="Blog"
-            title="Project Terbaru"
-            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex a accusamus eaque cumque. Excepturi, voluptates."
+            title="Tulisan Terkini"
+            description="Minat saya ingin menjadi full stack developer, dan gaya hidup saya ingin sederhana, saya sehari hari berhadapan dengan 2 monitor dan ditemani secangkir kopi"
           />
 
-          <div className="flex flex-wrap">           
-              <BlogCard />
+          <div className="flex flex-wrap">
+            <BlogCard />
           </div>
         </div>
       </section>

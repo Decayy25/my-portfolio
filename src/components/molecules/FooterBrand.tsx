@@ -1,9 +1,10 @@
+import Image from "next/image"
 import React from "react";
 import Heading from "@/components/atoms/Heading";
 import Text from "@/components/atoms/Text";
+import Icon from "@/assets/images/general/icon.png"
 
 interface FooterBrandProps {
-  name: string;
   description: string;
   contact: {
     email: string;
@@ -13,15 +14,14 @@ interface FooterBrandProps {
 }
 
 const FooterBrand: React.FC<FooterBrandProps> = ({
-  name,
   description,
   contact,
 }) => {
   return (
     <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-      <Heading level="h2" className="font-bold text-4xl text-white mb-5">
-        {name}
-      </Heading>
+      <div className="font-bold text-4xl text-white mb-3">
+        <Image src={Icon} alt="icon" width={200}/>
+      </div>
       <Heading level="h3" className="font-bold text-2xl text-white">
         {description}
       </Heading>

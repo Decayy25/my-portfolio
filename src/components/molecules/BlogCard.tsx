@@ -4,7 +4,7 @@ import Image from "next/image";
 import Hyperlink from "@/components/atoms/Hyperlink";
 import Text from "@/components/atoms/Text";
 import { Blogs } from "@/data/blogs";
-import { IBlogItem } from '@/@types/UI';
+import { IBlogItem } from '@/@types/Ui';
 
 
 const BlogCard = () => {
@@ -51,7 +51,7 @@ const BlogCard = () => {
                 alt={items.h3}
                 width={400}
                 height={300}
-                className="w-full h-auto object-cover"
+                className="w-full h-70 object-cover"
                 unoptimized
               />
             ) : (

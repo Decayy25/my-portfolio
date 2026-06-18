@@ -1,5 +1,5 @@
 import React from "react";
-import { ISocialMediaLink } from "@/@types/UI";
+import { ISocialMediaLink } from "@/@types/Ui";
 import Hyperlink from "@/components/atoms/Hyperlink";
 
 const SocialMediaLink: React.FC<ISocialMediaLink> = ({
