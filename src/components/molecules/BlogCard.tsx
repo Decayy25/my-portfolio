@@ -3,8 +3,31 @@ import Heading from "@/components/atoms/Heading";
 import Image from "next/image";
 import Hyperlink from "@/components/atoms/Hyperlink";
 import Text from "@/components/atoms/Text";
-import Blogs from "../../data/blogs";
 import { IBlogItem } from '@/@types/Ui';
+
+const Blogs = [
+  {
+    id: 1,
+    image: "programming",
+    h3: "Full Stack Developer",
+    href: "https://www.google.com/search?q=Full%20Stack%20developer",
+    text: "Saya memiliki minat yang cukup untuk menjadi full stack developer, dari awal penasaran sekarang mau menjadikan sebuah perkerjaan",
+  },
+  {
+    id: 2,
+    image: "ROG",
+    h3: "Republic Of Gamers",
+    href: "https://www.google.com/search?q=ROG",
+    text: "Saya juga punya mimpi seperti membeli komputer atau laptop dengan brand Republic Of Gamers",
+  },
+  {
+    id: 3,
+    image: "coffee",
+    h3: "Menikmati Secangkir Kopi",
+    href: "https://www.google.com/search?q=coffe",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse soluta ipsam perferendis?",
+  },
+];
 
 
 const BlogCard = () => {
