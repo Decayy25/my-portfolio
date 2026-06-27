@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { IButton } from "@/@types/Ui";
 
 const Button = (props: IButton) => {
-  const { children, className, id, type = "button", name, onClick } = props;
+  const { children, className, id, type = "button", name, onClick, disabled } = props;
   return (
     <Fragment>
       <button
@@ -11,6 +11,7 @@ const Button = (props: IButton) => {
         type={type}
         name={name}
         onClick={onClick}
+        disabled={disabled}
       >
         {children}
       </button>

@@ -4,7 +4,7 @@ import ProjectGrid from "@/components/organisms/ProjectGrid";
 import centralGpu from "@/assets/images/project/central-gpu.png";
 import mathFormula from "@/assets/images/project/math-formula.png";
 import smartClk from "@/assets/images/project/company-profile.png";
-import elearningSmart from "@/assets/images/project/elearning.png";
+import cyberNet from "@/assets/images/project/dashboard-cybernet.png";
 
 const projects = [
   {
@@ -34,16 +34,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "E-Learning SMarT",
-    img: elearningSmart,
-    name: "E-Learning",
-    description:
-      "Platform E-Learning berbasis website dengan teknologi MongoDB dan NextJS dan performa yang cepat serta fitur yang lengkap",
+    title: "CyberNet Admin Dashboard",
+    img: cyberNet,
+    name: "CMS",
+    description:"Platform CMS berbasis website dengan teknologi MongoDB dan NextJS dan performa yang cepat",
   },
 ];
-
-
-
 
 
 const Portfolio = () => {

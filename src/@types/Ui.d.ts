@@ -1,4 +1,4 @@
-import { ReactNode, ComponentType, CSSProperties } from "react";
+import { ReactNode, ComponentType, CSSProperties, ChangeEvent } from "react";
 import { IconType } from "react-icons";
 import { StaticImageData } from "next/image";
 
@@ -57,6 +57,7 @@ export interface IForm {
   placeholder?: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   value?: string;
+  disabled?: boolean;
 }
 
 export interface IHyperlink {
@@ -102,6 +103,7 @@ export interface IButton {
   type?: "button" | "reset" | "submit";
   name?: string;
   onClick?: () => void;
+  disabled?: boolean;
 }
 
 export interface IProject {

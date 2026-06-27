@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import Form from "next/form";
 import Label from "@/components/atoms/Label";
 import Button from "@/components/atoms/Button";
 import InputForm from "@/components/molecules/InputForm";
+import { ImSpinner9 } from "react-icons/im";
 
 const FormContact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handlerSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const res = await fetch("/api/contact", {
@@ -26,9 +28,19 @@ const FormContact = () => {
       });
 
       const result = await res.json();
+
+      if (res.ok) {
+        setName("");
+        setEmail("");
+        setMessage("");
+      }
+
       return result;
-    } catch {
+    } catch (error) {
+      console.error("Error:", error);
       throw new Error();
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -42,6 +54,7 @@ const FormContact = () => {
         value={name}
         placeholder="Your Name"
         onChange={(e) => setName(e.target.value)}
+        disabled={loading}
       />
       <InputForm
         id="email"
@@ -51,6 +64,7 @@ const FormContact = () => {
         value={email}
         placeholder="example@gmail.com"
         onChange={(e) => setEmail(e.target.value)}
+        disabled={loading}
       />
 
       <div className="w-full px-4 mb-8" data-aos="fade-up">
@@ -61,16 +75,18 @@ const FormContact = () => {
           value={message}
           placeholder="Your message"
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:right-1 focus:border-primary h-32"
+          disabled={loading}
+          className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:right-1 focus:border-primary h-32 disabled:opacity-50 disabled:cursor-not-allowed"
         ></textarea>
       </div>
 
       <div className="w-full px-4">
         <Button
           type="submit"
-          className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+          disabled={loading}
+          className="text-base font-semibold text-white bg-primary py-4 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Kirim
+          {loading ? <div className="flex justify-center items-center text-center"><ImSpinner9 className="animate-spin text-4xl"/></div> : "Kirim"}
         </Button>
       </div>
     </form>

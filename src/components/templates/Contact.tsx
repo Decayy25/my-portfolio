@@ -8,11 +8,11 @@ const Contact = () => {
     <Fragment>
       <section id="contact" className="pt-36 pb-32" data-aos="fade-up">
         <div className="container">
-          <div className="w-full px-4">
+          <div className="w-full px-6">
             <SectionHeader
               label="Contact"
               title="Hubungi Saya"
-              description="Ada pertanyaan, saran, atau ingin berkolaborasi? Mari terhubung! Anda bisa mengirimkan email atau langsung mengirim pesan ke media sosial saya."
+              description={`Mari terhubung! Anda bisa mengirimkan email atau langsung mengirim pesan ke media sosial saya.`}
             />
           </div>
 
